@@ -1,0 +1,1 @@
+# 3.   Write a program that contains a while loop. Use a variable to count the number of iterations and print out this value each time. After the fifth iteration, the loop should stop and exit. Use the break statement.
