@@ -1,0 +1,97 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#events {
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.events-header {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#event-list {display: flex;flex-wrap:wrap;justify-content: center;gap:1rem;}
+
+/* event box */
+.event {
+    position: relative;
+    width: 20rem;
+    margin: 10px;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    text-align: center;
+    font-size: 4.5rem;
+    background-color: white;
+    color: rgb(0, 0, 0);
+
+    /* add this */
+    z-index: 1; 
+}
+
+.event::before {
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.178);
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    z-index: -1; 
+}
+
+
+.event h2 {
+    margin-top: 0;
+    font-size: 2rem;    
+    font-weight: bold;
+}
+
+.event p {
+    font-size: 20px;
+    color: #080808;
+}
+
+.event button {
+    background: #080808;
+    width: 7rem;
+    margin: auto;
+    color: rgb(255, 255, 255); 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 1rem;
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: .2s ease;
+}
+
+/* Hover effect */
+.event button:hover {
+    transform: scale(1.1);
+    color: white;
+    background: #B175FF;
+}
+
+/* event background blur */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    z-index: -1; /* Place it behind other content */
+}

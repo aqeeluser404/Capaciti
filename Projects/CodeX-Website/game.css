@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(238, 238, 255);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #start-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(105, 105, 206);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .selections {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+  }
+  
+  .selection:hover {
+    transform: scale(1.2);
+  }
+  
+  .results {
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .result-score {
+    margin-left: .1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .result-selection {
+    opacity: .5;
+    font-size: 3rem;
+    margin: 10px;
+  }
+  
+  .result-selection.winner {
+    opacity: 1;
+  }
+  
+  #game-container {
+    display: none;
+  }
+  
+  #winner-message {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+    display: none;
+  }
+  

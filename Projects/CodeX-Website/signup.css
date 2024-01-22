@@ -1,0 +1,115 @@
+body {
+    background-color: #000000;
+    color: #000000;
+}
+#signup {
+    padding: 5rem 10rem;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#signup-form {
+    opacity: .2;
+    transform: translateX(50%);
+    animation: slideIn 0.7s forwards;
+}
+@keyframes slideIn {
+    to {opacity: 1;transform: translateX(0);}
+}
+
+/* form */
+
+/* Form header */
+.form-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+    
+/* Form Container */
+#signup-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 420px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+    
+/* Form Labels */
+#signup-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+    
+hr {
+    margin-bottom: 20px;
+}
+    
+/* Form Inputs */
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+    
+#signup-form input[type="text"]:focus,
+#signup-form input[type="email"]:focus,
+#signup-form input[type="password"]:focus {
+    border-color: #ff0000;
+}
+    
+/* Submit Button */
+#signup-form button[type="button"] {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 2rem;
+    border: none;
+    padding: 5px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+    
+#signup-form button[type="button"]:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* left side */
+#form_welcome {
+    background-image: url(image/form.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 500px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#form_welcome div {
+    background-color: #f7f7f7d8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: 500px;
+}

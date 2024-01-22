@@ -1,0 +1,54 @@
+body {
+    background-color: #000000;
+    color: #ffffff;}
+
+/* about us */
+#about_us {
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+#text_column {
+    width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#text_column p {color: rgba(255, 255, 255, 0.87);}
+#text_column h1 {margin-bottom: 3rem; font-size: 4rem;}
+#text_column p b {font-size: 2rem;color: #B175FF;}
+#text_column p span {font-size: 2rem;color: #AB0552;font-weight: bold;}
+#text_column {
+    opacity: .2;
+    animation: slide 2s forwards;
+}
+@keyframes slide {to {opacity: 1;}}
+
+#image_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    color: rgb(255, 255, 255);
+}
+.block {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    gap:1rem; 
+    align-items: center; 
+    text-align: center; 
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(97, 97, 97);
+    border-radius: 1rem;
+    width: 250px;
+    height: 300px;
+    background-color: #181818;
+}
+
+.block i {
+    font-size: 4rem;
+    color:white;
+}

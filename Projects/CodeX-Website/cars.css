@@ -1,0 +1,72 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+#cars .header_1 {
+    font-size: 4rem;
+}
+
+#cars {
+    padding: 5rem 10rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+/* table */
+.list_of_cars {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carTable th, .carTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.carTable th {
+    background-color: #000000;
+}
+
+.carTable th:first-child, .carTable td:first-child {
+    text-align: left;
+}
+
+/* filter */
+#searchInput {
+    padding: .7rem;
+    border-radius: 1rem;
+}
+
+#searchBox {
+    display: flex;
+    gap: 1rem;
+}
+
+/* pie chart */
+.row_2 {
+    text-align: center;
+    background-color: #181818;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 50%;
+}
