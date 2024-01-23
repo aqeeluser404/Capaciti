@@ -1,0 +1,59 @@
+/* FONT FAMILIES */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;800&family=Poppins:wght@300;400;500;600;700;800&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+
+h1 h2 h3 p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-title h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#top-nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.link-color-1 {
+    color: black;
+}
+.link-color-2 {
+    color: rgb(255, 255, 255);
+}
+
+/* hero-section */
+.left-box h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 7px 0 0 #2E8BC0, 10px 0px 0 #0C2D48;
+    font-size: 9rem;
+    text-align: end;
+    
+}
+.left-box h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-align: end;
+}
+
+.left-box p {
+    color: rgb(0, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    text-align: end;
+}
+
+
+.right-box p {
+    color: rgb(255, 255, 255);
+}
+
+/* footer section */
+footer p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}

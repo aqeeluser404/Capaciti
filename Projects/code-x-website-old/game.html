@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <section id="land-page">
+        <div class="welcome">
+            <h1>Welcome to <br> Rock <br> Paper <br> Scissors</h1>
+            <button onClick="openGame()" id="start">Click To Play</button>
+        </div>
+    </section>
+
+    <section id="start-game">
+        <div class="selections">
+            <button class="selection" data-selection="rock">✊</button>
+            <button class="selection" data-selection="paper">🖐️</button>
+            <button class="selection" data-selection="scissors">✌️</button>
+        </div>
+        <div class="results">
+            <div>
+                <span class="player">YOU</span>
+                <span class="result-score" data-your-score>0</span>
+            </div>
+            <div data-final-column>
+                <span class="player">NPC</span>
+                <span class="result-score" data-computer-score>0</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <button><a href="index.html">Quit</a></button>
+        <!-- <button><a href="index.html">Quit</a></button> -->
+    </footer>
+
+    <script src="script/game.js"></script>
+</body>
+</html>

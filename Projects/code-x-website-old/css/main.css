@@ -1,0 +1,312 @@
+        /* Global css */
+        html {
+            scroll-behavior: smooth;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family:Arial, Helvetica, sans-serif;
+            /* font-family: "Google Sans Regular"; */
+            box-sizing: border-box;
+
+        }
+        body {
+            background-color: rgb(209, 209, 255);
+
+        }
+        /* --------------------------------------------------------header */
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(238, 238, 255);
+            display: flex;  
+            align-items: center;    
+            justify-content: space-between;
+            padding: 0 100px;
+        }
+        .otg-top-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(0, 0, 105);
+        }
+        .nav-bar ul {
+            display: flex;       
+        }
+        .nav-bar ul li a {
+            display: block;
+            color: rgb(0, 0, 105);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: 0.2;
+            margin: 0 5px;
+        }
+        .nav-bar ul li a:hover {
+            color: rgb(238, 238, 255);
+            background-color: rgb(0, 0, 44);
+        }
+        /* ----------------------------------------------------------main */
+        /* section index */
+        .section-index {
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0, 0, 44, 0.205);
+            background-image: linear-gradient(to bottom right, rgb(238, 238, 255), rgb(0, 0, 44));
+            /* background-image: url(image/main-wallpaper\ \(3\).jpg);
+            background-position: center;
+            background-size:cover;
+            background-blend-mode: multiply; */
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0px 150px;
+        }
+        .logo {
+            margin: 17px;
+        }
+        .otg-main-title {
+            margin: 17px;
+        }
+        h1 {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 55px;
+            color: rgb(238, 238, 255);
+            border: 5px;
+            border-color: blue;
+            padding: 0;
+            margin: 0;
+            text-shadow: rgba(0, 0, 0, 0.24) 5px 5px 5px;
+        }
+        sub {
+            font-style: italic;
+        }
+        .sub2 {
+            font-style: italic;
+            font-size: 25px;
+            color:brown;
+        }
+        sup {
+            font-size: 65px;
+            color: rebeccapurple;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* section about*/
+        .section-about {
+            width: 100%;
+            height: 720px;
+            padding: 25px;
+            /* background-color: rgb(209, 209, 255); */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* flex: 10;
+            
+            justify-content: space-around; */
+            
+            
+        }
+        .box1 {   
+            background-color: rgb(255, 205, 131);
+            padding: 20px;
+            border-radius: 26px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 5px;
+
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        .box2 {
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            background-color: rgb(238, 238, 255);
+            padding: 20px;
+            border-radius: 26px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            height: 250px;
+            margin: 5px;
+        }
+        .picture {
+            padding: 5px 5px 5px 5px;
+            border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            width: 343px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 46, 0.747);
+            margin: 10px;
+        }
+        figcaption {
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            color: rgb(238, 238, 255);
+        }
+        .reference {
+            font-style: italic;
+            size: 10px;
+        }
+
+        /* section contact */
+        .section-contact {
+            width: 100%;
+            height: 550px;
+            background-image: linear-gradient(to top right, rgb(238, 238, 255), rgb(0, 0, 44));
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            padding: 25px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style the form */
+        /* .form-contact {
+            padding: 0;
+        }
+        form {
+            background-color: rgb(238, 238, 255);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto;
+        }
+        h3 {
+            font-size: 50px;
+            color: rgb(238, 238, 255);;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label, input, textarea, button {
+            display: block;
+            margin-bottom: 10px;
+        } 
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background-color: rgb(238, 238, 255);
+            color: rgb(0, 0, 44);
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(0, 0, 44);
+            color:rgb(238, 238, 255);
+        } */
+
+        /* section price */
+        .section-prices {
+            width: 100%;
+            height: 550px;
+            padding-left: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+        }
+        table {
+            border-collapse: collapse;
+            width: 65%;
+            margin-top: 15px;
+            background-color: rgb(195, 195, 255);
+            border: 1px solid rgb(0, 0, 117);
+        }
+        th {
+            background-color: rgb(0, 0, 44);
+            color: white;
+        }
+        th, td {
+            text-align: left;
+            padding: 15px;
+            margin: auto;
+            border: 1px solid rgb(54, 54, 94);
+        }
+        td:hover {
+            background-color: rgba(0, 0, 44, 0.205);
+            color: white;
+        }
+
+        /* javascript form styling */
+
+        /* Form header */
+        .form-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        }
+
+        /* Form Container */
+        #signup-form {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        /* Form Labels */
+        #signup-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        hr {
+            margin-bottom: 20px;
+        }
+
+        /* Form Inputs */
+        #signup-form input[type="text"],
+        #signup-form input[type="email"],
+        #signup-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        #signup-form input[type="text"]:focus,
+        #signup-form input[type="email"]:focus,
+        #signup-form input[type="password"]:focus {
+            border-color: #3498db;
+        }
+
+        /* Submit Button */
+        #signup-form button[type="button"] {
+            background-color: #ffffff;
+            color: black;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #signup-form button[type="button"]:hover {
+            background-color: #000000;
+            color: white;
+        }

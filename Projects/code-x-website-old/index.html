@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On The Go Rental | Code X</title>
+    <!-- https://wireframe.cc/knOVEM -->
+    <!-- implement picture links to new page -->
+    <!-- implement map embeddable for company location -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <div class="otg-top-title">On The Go Rentals</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Sign-up</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- section-main -->
+        <section class="section-index" id="index">
+            <div class="logo">
+                <picture>
+                    <img src="image/otg-logo-754.svg" alt="otg logo" height="133px" width="377px">
+                </picture>
+            </div>
+            <div class="otg-main-title">
+                <h1>EMPOWER YOUR JOURNEY</h1>
+                <h2><sub>Drive Your Dreams And Roam Freely</sub></h2>
+                <h3>"Carpe Diem on Wheels"</h3>
+            </div>
+        </section>
+
+        <!-- section-about -->
+        <section class="section-about" id="about">
+            <div>
+                <p class="box1">
+                    Explore The <br>
+                    Vault <br>
+                </p>
+            </div>
+            <div class="picture">
+                <!-- todo: source set to demonstrate responsive pics -->
+                <picture>
+                    <figure>
+                        <source srcset="image/4x4/4x4.jpg 1x, image/4x4/4x4.jpg 2x, image/4x4/4x4.jpg 4x">
+                        <img src="image/4x4/4x4.jpg" alt="4x4" width="333px" height="222">
+                        <figcaption>Unleash the Beast and Conquer Every Terrain with Our Mighty 4x4!</figcaption>
+                    </figure>
+                </picture>
+            </div>
+            <div class="box2">
+                <blockquote>
+                    <em>
+                        <sup>"</sup>
+                        My passion for cars is more than just a hobby; it's a way of life. <br>"
+                    </em>
+                    <footer class="reference">- Enzo Ferrari</footer>
+                </blockquote>
+            </div>
+            <div class="picture">
+                <picture>
+                    <figure>
+                        <source srcset="image/luxary/luxury.jpg 1x, image/luxary/luxury.jpg 2x, image/luxary/luxury.jpg 4x">
+                        <img src="image/luxary/luxury.jpg" alt="luxury" width="333px" height="222">
+                        <figcaption>Elevate Your Drive and Experience Pure Luxury and Unparalleled Elegance!</figcaption>
+                    </figure>
+                </picture>
+            </div>   
+            <div class="picture">
+                <!-- todo: source set to demonstrate responsive pics -->
+                <picture>
+                    <figure>
+                        <source srcset="image/sport/sport.jpg 1x, image/sport/sport.jpg 2x, image/sport/sport.jpg 4x">
+                        <img src="image/sport/sport.jpg" alt="sport" width="333px" height="222">
+                        <figcaption>Cruise in Comfort and Style with Our Spacious Family-Sized Cars.</figcaption>
+                    </figure>
+                </picture>
+            </div>   
+            <div class="picture">
+                <!-- todo: source set to demonstrate responsive pics -->
+                <picture>
+                    <figure>
+                        <img src="image/sport/sport-2.png" alt="sport" width="333px" height="222">
+                        <figcaption>Feel the Adrenaline Rush with Our Top Performance Sports Cars.</figcaption>
+                    </figure>
+                </picture>
+            </div>   
+            <div class="picture">
+                <!-- todo: source set to demonstrate responsive pics -->
+                <picture>
+                    <figure>
+                        <img src="image/4x4/4x4-2.png" alt="4x4" width="333px" height="222">
+                        <figcaption>Explore the Great Outdoors and Take On Any Terrain with Our Versatile Vehicles.</figcaption>
+                    </figure>
+                </picture>
+            </div>   
+        </section>
+
+        <!-- section-contact -->
+        <section class="section-contact" id="contact">
+            <!-- <h3>Contact us</h3> -->
+            <div class="form-contact">
+                <form id="signup-form">
+                    <h3 class="form-heading">Registration</h3>
+                    <hr>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br>
+                    
+                    <!-- Javascript applied to onclick -->
+                    <button type="button" onClick="saveUsers()">Sign Up</button>
+                    <button type="button" onClick="login()">Login</button>
+                    <button type="button" onClick="viewUsers()">View</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section-prices" id="prices">
+            <p class="box1">
+                Our Price Range
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Brand</th>
+                        <th>Year</th>
+                        <th>Color</th>
+                        <th>Engine</th>
+                        <th>Transmission</th>
+                        <th>Selling Price</th>
+                        <th>Rental Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Honda Civic</td>
+                        <td>Honda</td>
+                        <td>2022</td>
+                        <td>Silver</td>
+                        <td>1.8L 4-cylinder</td>
+                        <td>Automatic</td>
+                        <td>$20 000</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Toyota Camry</td>
+                        <td>Toyota</td>
+                        <td>2021</td>
+                        <td>Black</td>
+                        <td>2.5L 4-cylinder</td>
+                        <td>CVT</td>
+                        <td>$25,500</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Ford F-150</td>
+                        <td>Ford</td>
+                        <td>2020</td>
+                        <td>Blue</td>
+                        <td>3.5L V6</td>
+                        <td>Automatic</td>
+                        <td>$32,000</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>BMW 3 Series</td>
+                        <td>BMW</td>
+                        <td>2019</td>
+                        <td>White</td>
+                        <td>2.0L 4-cylinder Turbo</td>
+                        <td>Automatic</td>
+                        <td>$38,500</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Equinox</td>
+                        <td>Chevrolet</td>
+                        <td>2022</td>
+                        <td>Red</td>
+                        <td>1.5L 4-cylinder Turbo</td>
+                        <td>Automatic</td>
+                        <td>$23,800</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan Rogue</td>
+                        <td>Nissan</td>
+                        <td>2023</td>
+                        <td>Gray</td>
+                        <td>2.5L 4-cylinder</td>
+                        <td>CVT</td>
+                        <td>$27,900</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Jeep Wrangler</td>
+                        <td>Jeep</td>
+                        <td>2021</td>
+                        <td>Green</td>
+                        <td>3.6L V6</td>
+                        <td>Manual</td>
+                        <td>$34,500</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Hyundai Sonata</td>
+                        <td>Hyundai</td>
+                        <td>2020</td>
+                        <td>Blue</td>
+                        <td>2.5L 4-cylinder</td>
+                        <td>Automatic</td>
+                        <td>$21,800</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Lexus RX 350</td>
+                        <td>Lexus</td>
+                        <td>2019</td>
+                        <td>Silver</td>
+                        <td>3.5L V6</td>
+                        <td>Automatic</td>
+                        <td>$38,900</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>Volkswagen Golf GTI</td>
+                        <td>Volkswagen</td>
+                        <td>2022</td>
+                        <td>Red</td>
+                        <td>2.0L 4-cylinder Turbo</td>
+                        <td>Automatic</td>
+                        <td>$29,500</td>
+                        <td>???</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#button {
+    background-color: #0C2D48;
+    border: 1px solid #B1D4E0;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+
+    /* font style */
+    color: #B1D4E0;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+#botton:hover {
+    background-color: #B1D4E0;  
+    color: #0C2D48;
+}
